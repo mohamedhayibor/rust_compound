@@ -10,5 +10,5 @@ documentation = "https://github.com/mohamedhayibor/rust_compound"
 repository = "https://github.com/mohamedhayibor/rust_compound"
 
 license = "MIT"
-keywords = ["investment", "worth", "financial", "gains", "loss", "compounding", "compoud", "value", "calculation"]
+keywords = ["investment", "worth", "financial", "compounding", "compoud"]
 
