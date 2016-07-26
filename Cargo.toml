@@ -3,7 +3,7 @@ name = "compound"
 version = "0.1.0"
 authors = ["Mohamed Hayibor <mohamedhayibor@gmail.com>"]
 
-publish = false
+publish = true
 description = "A crate that calculates the value of the initial investment based on rates of return (daily, monthly, semi-annual, annual...)"
 
 documentation = "https://github.com/mohamedhayibor/rust_compound"
