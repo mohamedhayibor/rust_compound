@@ -1,0 +1,14 @@
+[package]
+name = "compound"
+version = "0.1.0"
+authors = ["Mohamed Hayibor <mohamedhayibor@gmail.com>"]
+
+publish = false
+description = "A crate that calculates the value of the initial investment based on rates of return (daily, monthly, semi-annual, annual...)"
+
+documentation = "https://github.com/mohamedhayibor/rust_compound"
+repository = "https://github.com/mohamedhayibor/rust_compound"
+
+license = "MIT"
+keywords = ["investment", "worth", "financial", "gains", "loss", "compounding", "compoud", "value", "calculation"]
+
