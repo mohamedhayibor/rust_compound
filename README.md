@@ -4,7 +4,7 @@ This crate calculates the value of the initial investment based on rates of retu
 
 ## Usage
 
-```rs
+```rust
 extern crate compound;
 use compound::compound;
 
