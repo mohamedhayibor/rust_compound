@@ -1,0 +1,6 @@
+nguage: rust
+sudo: false
+rust:
+  - nightly
+  - beta
+  - stable
