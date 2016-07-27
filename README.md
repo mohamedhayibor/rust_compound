@@ -18,6 +18,14 @@ fn main() {
 }
 ```
 
+## How to include it in your project
+
+In your project's `Cargo.toml` include the package name and version under like so:
+```rust
+[dependencies]
+compound = "0.1.0"
+```
+
 ## Raison d'être
 To make the calculation of how much your investment is worth super easy. Just pass by reference `$` the initial investment and the array of percentage returns (a slice or vector). Algorithm complexity O(n).
 
