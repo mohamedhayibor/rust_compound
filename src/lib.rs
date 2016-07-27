@@ -11,10 +11,10 @@
 //!     println!("The percentages were {:?}", percentages);
 //! }
 
-pub fn compound(investment: &f64, returns: &[f64]) -> f64 {
-    let initial_investment = investment.clone();
-
-    (returns.iter().fold(initial_investment, |value, perc | {
+//! > major change: just noticed that primitives already implement the copy trait
+//! and therefore wouldn't mutate anything
+pub fn compound(investment: f64, returns: &[f64]) -> f64 {
+    (returns.iter().fold(investment, |value, perc | {
         value * ( 1. + (perc / 100. ))
     }) * 100.).round() / 100.
 }
@@ -26,7 +26,7 @@ fn test_compound_vectors() {
     let percentages = vec![10.2, -11.3, 23.5, -34., 0.];
     let init_value = 1000.00;
 
-    let balance = compound( &init_value, &percentages);
+    let balance = compound(init_value, &percentages);
 
     assert_eq!(balance, 796.74);
 
@@ -39,14 +39,10 @@ fn test_compound_vectors() {
 #[test]
 fn test_compound_slices() {
     let percentages = [10.2, -11.3, 23.5, -34., 0.];
-    let init_value: f64 = 1000.00;
 
-    let balance = compound(&init_value, &percentages);
+    let balance = compound(1000.00, &percentages);
 
     assert_eq!(balance, 796.74);
-
-    // the initial balance should still be available
-    assert_eq!(init_value, 1000.00);
 }
 
 // *** Special Thanks to zsck, marciaux, exoticon for helping out ***
