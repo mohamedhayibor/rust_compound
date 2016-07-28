@@ -1,5 +1,5 @@
-compound
-----
+# compound ![](https://travis-ci.org/mohamedhayibor/rust_compound.svg?branch=master)
+
 This crate calculates the value of the initial investment based on rates of return (daily, monthly, semi-annual, annual...) :moneybag:.
 
 ## Usage
