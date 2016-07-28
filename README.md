@@ -1,4 +1,4 @@
-# compound ![](https://travis-ci.org/mohamedhayibor/rust_compound.svg?branch=master)
+# compound ![](https://travis-ci.org/mohamedhayibor/rust_compound.svg?branch=master) [![crates.io](https://img.shields.io/crates/v/compound.svg)](https://crates.io/crates/compound)
 
 This crate calculates the value of the initial investment based on rates of return (daily, monthly, semi-annual, annual...) :moneybag:.
 
