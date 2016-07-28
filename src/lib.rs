@@ -1,6 +1,6 @@
 //! *********** Typical usage ***************
-//!
-//! use compound;
+//! extern crate compound;
+//! use compound::compound;
 //!
 //! fn main() {
 //!     let percentages = [10., 11., 23., 34.];
